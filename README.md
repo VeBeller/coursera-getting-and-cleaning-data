@@ -20,7 +20,7 @@ My final choice was to extract all measures that contain the exact string "mean(
 The original data contains additional variables that contain the word "mean" (e.g. MeanFreq()); however, I deliberately did not extract these variables for the purpose of this assignment.
 
 ##Files included in this repository:
-* Codebook.md: a description of the steps undertaken to produce the tidy dataset from the original source data, as well as a list of variables with description included in the final tidy data set.
+* Codebook.md: a more detailed description of the steps undertaken to produce the tidy dataset from the original source data, as well as the list of variables (with description) included in the final tidy data set.
 * run_analysis.R: the R code to create the tidy dataset from the original source data
 * tidy_wide.txt: a tidy data set containing the mean of each selected measurement by subject and activity
 * experiment_info.txt: more information on the raw source data and experiment
