@@ -82,6 +82,15 @@ temp1<-names(tidy_wide)
 #### 12. write table to 'tidy_wide.txt' ####
 write.table(tidy_wide,file="tidy_wide.txt")
 
+
 ##### For peer review: ####
-##code to read-in the tidy dataset:
+
+##code to read-in the tidy dataset from the weblink:
+#address <- "https://s3.amazonaws.com/coursera-uploads/peer-review/HkJsxW0yEeWEewoyD2Bc5Q/8fbcddd5afe5ef71a3b054c47a2f6630/tidy_wide.txt"
+#address <- sub("^https", "http", address)
+#tidy_wide <- read.table(url(address), header = TRUE) 
+#View(tidy_wide)
+
+##alternative code, if the data set was downloaded into the working directory:
 #tidy_wide<-read.table(file="tidy_wide.txt", header=TRUE, sep="")
+#View(tidy_wide)
