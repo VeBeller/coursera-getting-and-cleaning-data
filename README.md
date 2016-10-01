@@ -5,21 +5,15 @@ This data repository contains all files for the Week 4 assignment of the Courser
 The data used for this assignment was sourced from the following link:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-This data was collected from the accelerometers from the Samsung Galaxy S smartphone. 
-An experiment was conducted with a group of 30 volunteers. Each person performed the following six activities wearing a smartphone: walking, walking upstairs, walking downstairs, sitting, laying.
-
-Using the smartphones embedded accelerometer and gyroscope, a number of different signals were measured and recorded.
-A full description of the experiment is available here:
+This data was collected as part of an experiment conducted with a group of 30 volunteers. Each person was asked to wear a Samsung Galaxy S smartphone while performing the following six activities: walking, walking upstairs, walking downstairs, sitting, laying. Using the accelerometer and gyroscope embedded in the smartphones, a number of different signals were measured and recorded. The collected data was then randomly split into a training data set (70% of observations) and a test data set (30% of observations). A full description of the experiment is available here:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-
-For the experiment, the data was randomly split into a training dataset (70% of observations) and a test dataset (30% of observations).
 
 The aim of this assignment was to create one R script called run_analysis.R which performs the following data cleaning steps:
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement.
 * Uses descriptive activity names to name the activities in the data set
 * Appropriately labels the data set with descriptive variable names.
-* From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+* Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 As discussed in the Week 4 Forum (https://www.coursera.org/learn/data-cleaning/discussions/weeks/4/threads/g7dwW25DEeaFmBJqjnMcrw) there is some freedom in relation to the interpretation of the second point above.
 My final choice was to extract all measures that contain the exact string "mean()" or "std()". 
